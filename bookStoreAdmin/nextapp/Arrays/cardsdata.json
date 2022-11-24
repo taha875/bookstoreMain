@@ -1,0 +1,37 @@
+[
+{
+ "title" :"Badar",
+ "description":"Inventory Of Books",
+  "Inventory":"Total Books"
+},
+{
+    "title" :"Audio",
+    "description":"Inventory Of Books",
+     "Inventory":"Total Books"
+   },
+
+   {
+    "title" :"Videos",
+    "description":"Inventory Of Books",
+     "Inventory":"Total Books"
+   },
+   {
+    "title" :"Nasheeds",
+    "description":"Inventory Of Books",
+     "Inventory":"Total Books"
+    },
+    {
+     "title" :"Posters",
+     "description":"Inventory Of Books",
+      "Inventory":"Total Books"
+    },
+    {
+     "title" :"Links",
+     "description":"Inventory Of Books",
+      "Inventory":"Total Books"
+    }
+   
+
+
+
+]
