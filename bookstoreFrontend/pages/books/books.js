@@ -1,4 +1,3 @@
-import { data } from "autoprefixer";
 import Bookcard from "../books/bookcard";
 import React, { useState } from "react";
 export default function Index() {
