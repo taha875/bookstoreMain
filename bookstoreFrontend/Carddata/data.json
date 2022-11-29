@@ -2,33 +2,39 @@
   {
     "img": "https://i.ibb.co/jTs5mmQ/CARDIMG1.jpg",
     "name": "Islamic Books",
-    "title": "Islamic holy books are the texts which Muslims believe were authored by Allah through various prophets throughout humanity's history. All these books, in Muslim belief, promulgated the code and laws that God ordained for people."
+    "title": "Islamic holy books are the texts which Muslims believe were authored by Allah through various prophets throughout humanity's history. All these books, in Muslim belief, promulgated the code and laws that God ordained for people.",
+    "link": "books/books"
   },
   {
     "img": "https://i.ibb.co/yhxK489/audio2.jpg",
     "name": "Audio",
-    "title": "Authentic Islamic Audios recoreded by best Mualim"
+    "title": "Authentic Islamic Audios recoreded by best Mualim",
+    "link": "audios/audios"
   },
   {
     "img": "https://i.ibb.co/JFv6zV6/videoimg.jpg",
     "name": "Islamic Videos",
-    "title": "Good Authentic Islamic Videos"
+    "title": "Good Authentic Islamic Videos",
+    "link": "videos/videos"
   },
 
   {
     "img": "https://i.ibb.co/1LrYSv7/nashhed.jpg",
     "name": "Nasheeds",
-    "title": "A nasheed is a work of vocal music, partially coincident with hymns, that is either sung a cappella or with instruments, according to a particular style or tradition within Islam"
+    "title": "A nasheed is a work of vocal music, partially coincident with hymns, that is either sung a cappella or with instruments, according to a particular style or tradition within Islam",
+    "link": "Nasheed/nasheeds"
   },
 
   {
     "img": "https://i.ibb.co/PrVKfyy/posters.png",
     "name": "Islamic Posters",
-    "title": "Islamic Dua's and Posters "
+    "title": "Islamic Dua's and Posters ",
+    "link":"posters/posters"
   },
   {
     "img": "https://i.ibb.co/M19MQ1s/linkk.jpg",
     "name": "Islamic Links",
-    "title": "Authentic Islamic Telegram Channels,Websites for Books and Links to access Islamic Websites "
+    "title": "Authentic Islamic Telegram Channels,Websites for Books and Links to access Islamic Websites ",
+    "link": "links/link"
   }
 ]

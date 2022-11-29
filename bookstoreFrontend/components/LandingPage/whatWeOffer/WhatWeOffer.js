@@ -40,21 +40,22 @@ function WhatWeOffer() {
         Deen in This Day & Age of Fitnah.
         <br /> <span className="font-bold">Our Offering</span>{" "}
       </div>
-      <div className="mt-8 flex items-center justify-center">
+      <div className="mt-8 flex justify-center container items-center ">
         <img
-          className=" w-auto h-96 mr-24"
+          className=" w-auto h-80 mr-24"
           src="https://i.ibb.co/Zm8CcZs/hstry-img.png"
         />
+
         <div>
           {data.map((el, i) => {
             return (
               <>
-                <div
-                  key={i}
-                  class=" font-semibold flex items-center text-gray-800"
-                >
-                  <Icons iconElement={el.svg} />
-                  <div class="ml-2 text-lg">{el.name}</div>
+                <div className=" bg-yellow-700 rounded-xl shadow-lg w-full h-12 mb-4 container grid grid-cols-3 gap-8">
+                  <div key={i}> </div>
+                  <div className="text-white text-center flex justify-center items-center  ">
+                    <Icons iconElement={el.svg} />
+                    <div className="m-2"> {el.name}</div>
+                  </div>
                 </div>
               </>
             );
