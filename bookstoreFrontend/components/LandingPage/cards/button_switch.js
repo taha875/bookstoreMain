@@ -8,4 +8,5 @@ function button({ btnfunct }) {
     default:
   }
 }
+
 export default button_switch;
