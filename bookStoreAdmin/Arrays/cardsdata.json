@@ -1,37 +1,45 @@
 [
-{
- "title" :"Badar",
- "description":"Inventory Of Books",
-  "Inventory":"Total Books"
-},
-{
-    "title" :"Audio",
-    "description":"Inventory Of Books",
-     "Inventory":"Total Books"
-   },
+  {
+    "title": "Books",
+    "description": "Inventory Of Books",
+    "Inventory": "10",
+    "svg": "Books",
+    "link": "/booksdash"
+  },
+  {
+    "title": "Audio",
+    "description": "Inventory Of Audio",
+    "Inventory": "7",
+    "svg": "Audio",
+    "link": "/audiodash"
+  },
 
-   {
-    "title" :"Videos",
-    "description":"Inventory Of Books",
-     "Inventory":"Total Books"
-   },
-   {
-    "title" :"Nasheeds",
-    "description":"Inventory Of Books",
-     "Inventory":"Total Books"
-    },
-    {
-     "title" :"Posters",
-     "description":"Inventory Of Books",
-      "Inventory":"Total Books"
-    },
-    {
-     "title" :"Links",
-     "description":"Inventory Of Books",
-      "Inventory":"Total Books"
-    }
-   
-
-
-
+  {
+    "title": "Videos",
+    "description": "Inventory Of Videos",
+    "Inventory": "15",
+    "svg": "Videos",
+    "link": "/videodash"
+  },
+  {
+    "title": "Nasheeds",
+    "description": "Inventory Of Nasheeds",
+    "Inventory": "5",
+    "svg": "Nasheeds",
+    "link": "/nasheed"
+  },
+  {
+    "title": "Posters",
+    "description": "Inventory Of Posters",
+    "Inventory": "20",
+    "svg": "Posters",
+    "link": "/posterdash"
+  },
+  {
+    "title": "Links",
+    "description": "Inventory Of Links",
+    "Inventory": "35",
+    "svg": "Links",
+    "link": "/linkdash"
+  }
 ]

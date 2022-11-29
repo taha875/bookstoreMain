@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "bookname": "BOOK",
+    "bookPrice": "5000",
+    "date": "2022/12/12",
+    "bookDescription": "Test"
+  },
+  {
+    "id": 2,
+    "bookname": "BOOK2",
+    "bookPrice": "50",
+    "date": "2022/1/12",
+    "bookDescription": "Test1"
+  }
+]
