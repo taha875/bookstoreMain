@@ -26,10 +26,10 @@ function icons({ iconElement }) {
       iconElement = <Links />;
       break;
       case"posters":
-      iconElement=<Posters/>;
+      iconElement=<Posters />;
       break;
       case "links":
-        iconElement=<Links/>;
+        iconElement=<Links />;
         break;
         default:
 
