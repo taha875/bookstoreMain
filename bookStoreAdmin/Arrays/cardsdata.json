@@ -4,14 +4,14 @@
     "description": "Inventory Of Books",
     "Inventory": "10",
     "svg": "Books",
-    "link": "/booksdash"
+    "link": "/books"
   },
   {
     "title": "Audio",
     "description": "Inventory Of Audio",
     "Inventory": "7",
     "svg": "Audio",
-    "link": "/audiodash"
+    "link": "/audio"
   },
 
   {
@@ -19,7 +19,7 @@
     "description": "Inventory Of Videos",
     "Inventory": "15",
     "svg": "Videos",
-    "link": "/videodash"
+    "link": "/video"
   },
   {
     "title": "Nasheeds",
@@ -33,13 +33,13 @@
     "description": "Inventory Of Posters",
     "Inventory": "20",
     "svg": "Posters",
-    "link": "/posterdash"
+    "link": "/poster"
   },
   {
     "title": "Links",
     "description": "Inventory Of Links",
     "Inventory": "35",
     "svg": "Links",
-    "link": "/linkdash"
+    "link": "/link"
   }
 ]

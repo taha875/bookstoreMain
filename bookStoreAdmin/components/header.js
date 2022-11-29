@@ -3,7 +3,7 @@ import React from "react";
 const header = () => {
   return (
     // vertical nav bar
-    <nav class="bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-white-900 w-full  ">
+    <nav class="bg-white border-gray-200  rounded dark:bg-white-900 w-full  ">
       <div class="container flex flex-wrap items-center justify-between w-full pl-6">
         <div className="flex items-center pl-3 bg-white border w-64 rounded border-gray-200">
           <svg
@@ -61,7 +61,7 @@ const header = () => {
           <ul class="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
             <li>
               <div>
-                <button>
+                <button className="mt-2">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     class="icon icon-tabler icon-tabler-bell"
@@ -83,12 +83,17 @@ const header = () => {
             </li>
 
             <li>
-              <a
-                href="#"
-                class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
-              >
-                Username
-              </a>
+              <div className="flex flex-row content-center items-center ">
+                <div className="w-8 h-8 lg:mb-0 bg-cover rounded-full mr-2 flex justify-center items-center bg-gray-100 dark:bg-gray-800 shadow-md">
+                  <p className="text-indigo-700 font-bold">RS</p>
+                </div>
+                <a
+                  href="#"
+                  class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                >
+                  Username
+                </a>
+              </div>
             </li>
           </ul>
         </div>

@@ -4,8 +4,8 @@ import PageHeader from "../Reuseabletable/pageHeader/PageHeader";
 const audiotable = () => {
   return (
     <div>
-      <PageHeader headingText={"Links"} />
-      <Table title={"Links"} data={""} />
+      <PageHeader headingText={"Audio"} />
+      <Table title={"Audio"} data={""} />
     </div>
   );
 };

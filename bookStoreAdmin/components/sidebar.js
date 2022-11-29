@@ -6,15 +6,15 @@ export default function Index() {
   const sideNav = [
     {
       name: "Dashboard",
-      link: "/maindash",
+      link: "/",
     },
     {
       name: "Books",
-      link: "/booksdash",
+      link: "/books",
     },
     {
       name: "Video",
-      link: "/videodash",
+      link: "/video",
     },
     {
       name: "Nasheed",
@@ -22,15 +22,15 @@ export default function Index() {
     },
     {
       name: "Audio",
-      link: "/audiodash",
+      link: "/audio",
     },
     {
       name: "Poster",
-      link: "/posterdash",
+      link: "/poster",
     },
     {
       name: "Links",
-      link: "/linkdash",
+      link: "/link",
     },
   ];
   return (
@@ -42,12 +42,12 @@ export default function Index() {
           show ? "-translate-x-full" : "translate-x-0"
         } bg-white transform  xl:translate-x-0 ease-in-out transition duration-500 flex justify-start items-start w-full border-r border-gray-300 w-64  flex-col h-screen`}
       >
-        <div className="m-auto mt-8">
+        <div className="m-auto mt-2">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             class="icon icon-tabler icon-tabler-affiliate"
-            width="50"
-            height="50"
+            width="40"
+            height="40"
             viewBox="0 0 24 24"
             stroke-width="1.5"
             stroke="#2c3e50"
@@ -63,13 +63,14 @@ export default function Index() {
             <circle cx="18.5" cy="18.5" r="1.5" />
             <circle cx="8.5" cy="15.5" r="4.5" />
           </svg>
-          <h1 className="font-bold ml-2">Logo</h1>
+          <h1 className="font-bold text-sm m-auto">BookStore</h1>
         </div>
         <div className="xl: mt-10 flex flex-col justify-start items-start px-4 w-full space-y-3 pb-5 h-full ">
           {sideNav.map((el, i) => {
             return (
               <>
                 <button
+                  role="button"
                   onClick={() => Router.push(el?.link)}
                   className="focus:outline-none flex jusitfy-start hover:text-white focus:bg-indigo-700 focus:text-white hover:bg-indigo-700 text-gray-600 rounded py-3 pl-4 items-center space-x-6 w-full focus:ring-2 focus:ring-offset-2 focus:ring-indigo-700 "
                 >
