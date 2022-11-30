@@ -1,9 +1,10 @@
 import React from "react";
 
 const header = () => {
+  const [dropdown, setDropdown] = React.useState(false);
   return (
     // vertical nav bar
-    <nav class="bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-white-900 w-full  ">
+    <nav class="bg-white border-gray-200 rounded dark:bg-white-900 w-full  ">
       <div class="container flex flex-wrap items-center justify-between w-full pl-6">
         <div className="flex items-center pl-3 bg-white border w-64 rounded border-gray-200">
           <svg
@@ -57,11 +58,14 @@ const header = () => {
             ></path>
           </svg>
         </button>
-        <div class="hidden w-full md:block md:w-auto" id="navbar-default">
-          <ul class="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+        <div
+          class="hidden w-full md:block md:w-auto relative"
+          id="navbar-default"
+        >
+          <ul class="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-4 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
             <li>
               <div>
-                <button>
+                <button className="mt-2">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     class="icon icon-tabler icon-tabler-bell"
@@ -83,12 +87,48 @@ const header = () => {
             </li>
 
             <li>
-              <a
-                href="#"
-                class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
-              >
-                Username
-              </a>
+              <div className="flex flex-row content-center items-center cursor-pointer">
+                <div className="w-8 h-8 lg:mb-0 bg-cover rounded-full mr-2 flex justify-center items-center bg-gray-100 dark:bg-gray-800 shadow-md">
+                  <p className="text-indigo-700 font-bold">RS</p>
+                </div>
+                <svg
+                  onClick={() => setDropdown(!dropdown)}
+                  xmlns="http://www.w3.org/2000/svg"
+                  className={`duration-300 ease-in-out ${
+                    dropdown ? "rortate-0 " : "rotate-180 transform"
+                  }`}
+                  width={16}
+                  height={16}
+                  viewBox="0 0 24 24"
+                  strokeWidth="1.5"
+                  stroke="#9e9e9e"
+                  fill="none"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <polyline points="6 9 12 15 18 9" />
+                </svg>
+
+                
+                <div
+                  className={`${
+                    dropdown ? `w-32 h-[108px]` : `w-0 h-0`
+                  }   rounded-md shadow-lg overflow-hidden bg-white duration-300 ease-in-out  absolute top-10 right-5 z-30`}
+                >
+                  <ul className="text-sm font-normal">
+                    <li className="px-4 py-2 hover:bg-indigo-700 hover:text-white cursor-pointer">
+                      Profile
+                    </li>
+                    <li className="px-4 py-2 hover:bg-indigo-700 hover:text-white cursor-pointer">
+                      Setting
+                    </li>
+                    <li className="px-4 py-2 hover:bg-indigo-700 hover:text-white cursor-pointer">
+                      Sign Out
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </li>
           </ul>
         </div>

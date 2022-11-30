@@ -5,7 +5,7 @@ import Router from "next/router";
 export default function card() {
   return (
     <>
-      <div className=" flex flex-wrap gap-4 items-center w-full py-8 ml-12 drop-shadow-xl">
+      <div className="container mx-auto flex flex-wrap gap-4 items-center w-full py-8 pl-8 drop-shadow-xl">
         {Cardsdata.map((Cardsdata) => {
           return (
             <>
@@ -23,12 +23,12 @@ export default function card() {
                       <a href={Cardsdata.link}>
                         <button className="py-3 px-7 text-xs font-semibold leading-3 bg-indigo-700 rounded hover:bg-indigo-600 focus:outline-none text-white">
                           View Details
-                        </button>   
+                        </button>
                       </a>
                     </div>
                   </div>
                   {/* SVG DIV bar body starts here */}
-                  <div>
+                  <div className="ml-24 m-auto">
                     <Icon iconparam={Cardsdata?.svg} />
                   </div>
                 </div>

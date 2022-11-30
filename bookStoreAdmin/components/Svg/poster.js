@@ -2,7 +2,7 @@ import React from "react";
 
 const poster = () => {
   return (
-    <div className="ml-24 px-3s">
+    <div className="">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         class="icon icon-tabler icon-tabler-photo"

@@ -2,7 +2,7 @@ import React from "react";
 
 const link = () => {
   return (
-    <div className="ml-24 px-3">
+    <div className="">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         class="icon icon-tabler icon-tabler-link"
