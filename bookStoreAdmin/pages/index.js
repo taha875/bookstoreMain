@@ -7,7 +7,7 @@ import Bookinner from "./bookinner";
 const index = () => {
   return (
     <Layout>
-      <Bookinner />
+      <Dashboard />
     </Layout>
   );
 };
