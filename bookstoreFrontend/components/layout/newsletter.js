@@ -7,7 +7,7 @@ const Newsletter = () => {
     <div id="modal" className="flex items-center justify-center py-12">
       <div
         className={
-          "bg-white border rounded-md mx-4 md:w-10/12 items-center justify-center relative " +
+          "bg-white  rounded-md mx-4 md:w-10/12 items-center justify-center relative " +
           (show ? "flex" : "hidden")
         }
       >
