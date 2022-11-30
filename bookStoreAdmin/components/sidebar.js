@@ -42,7 +42,7 @@ export default function Index() {
           show ? "-translate-x-full" : "translate-x-0"
         } bg-white transform  xl:translate-x-0 ease-in-out transition duration-500 flex justify-start items-start w-full border-r border-gray-300 w-64  flex-col h-screen`}
       >
-        <div className="m-auto mt-2">
+        <div className="m-auto mt-4">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             class="icon icon-tabler icon-tabler-affiliate"
@@ -65,7 +65,7 @@ export default function Index() {
           </svg>
           <h1 className="font-bold text-sm m-auto">BookStore</h1>
         </div>
-        <div className="xl: mt-10 flex flex-col justify-start items-start px-4 w-full space-y-3 pb-5 h-full ">
+        <div className="xl: mt-6 flex flex-col justify-start items-start px-4 w-full space-y-3 pb-5 h-full ">
           {sideNav.map((el, i) => {
             return (
               <>
