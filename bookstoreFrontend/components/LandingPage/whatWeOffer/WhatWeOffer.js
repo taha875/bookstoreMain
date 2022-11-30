@@ -29,16 +29,18 @@ function WhatWeOffer() {
     },
   ];
   return (
-    <div className=" mx-auto container flex flex-col items-center justify-center mt-20">
-      <h2 className="text-yellow-800 text-3xl font-bold ">
-        Welcome To Islamic Library
-        <div className="bg-gradient-to-r from-yellow-700 h-1 ml-1 rounded "></div>
-      </h2>
+    <div className=" mx-auto container  flex flex-col items-center justify-center my-12">
+      <div className="mb-12 mx-auto container  flex flex-col items-center justify-center">
+        <h2 className="text-yellow-800 text-3xl font-bold ">
+          Welcome To Islamic Library
+          <div className="bg-gradient-to-r from-yellow-700 h-1 ml-1 rounded "></div>
+        </h2>
 
-      <div className="text-gray-800 text-center font font-semibold ">
-        The Sole Purpose of Our Work is to Spread the Correct Information Of
-        Deen in This Day & Age of Fitnah.
-        <br /> <span className="font-bold">Our Offering</span>{" "}
+        <div className="text-gray-800 text-center font font-semibold ">
+          The Sole Purpose of Our Work is to Spread the Correct Information Of
+          Deen in This Day & Age of Fitnah.
+          <br /> <span className="font-bold">Our Offering</span>{" "}
+        </div>
       </div>
       <div className="mt-8 flex justify-center container items-center ">
         <img
