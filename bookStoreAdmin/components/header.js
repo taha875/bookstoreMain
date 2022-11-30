@@ -7,6 +7,8 @@ const header = () => {
     <nav class="bg-white border-gray-200 rounded dark:bg-white-900 w-full  ">
       <div class="container flex flex-wrap items-center justify-between w-full pl-6">
         <div className="flex items-center pl-3 bg-white border w-64 rounded border-gray-200">
+        
+        
           <svg
             className="text-gray-500"
             xmlns="http://www.w3.org/2000/svg"
@@ -110,7 +112,7 @@ const header = () => {
                   <polyline points="6 9 12 15 18 9" />
                 </svg>
 
-                
+
                 <div
                   className={`${
                     dropdown ? `w-32 h-[108px]` : `w-0 h-0`
