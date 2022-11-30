@@ -4,7 +4,7 @@ const header = () => {
   const [dropdown, setDropdown] = React.useState(false);
   return (
     // vertical nav bar
-    <nav class="bg-white border-gray-200  rounded dark:bg-white-900 w-full  ">
+    <nav class="bg-white border-gray-200 rounded dark:bg-white-900 w-full  ">
       <div class="container flex flex-wrap items-center justify-between w-full pl-6">
         <div className="flex items-center pl-3 bg-white border w-64 rounded border-gray-200">
           <svg
@@ -87,14 +87,12 @@ const header = () => {
             </li>
 
             <li>
-              <div
-                className="flex flex-row content-center items-center cursor-pointer"
-                onClick={() => setDropdown(!dropdown)}
-              >
+              <div className="flex flex-row content-center items-center cursor-pointer">
                 <div className="w-8 h-8 lg:mb-0 bg-cover rounded-full mr-2 flex justify-center items-center bg-gray-100 dark:bg-gray-800 shadow-md">
                   <p className="text-indigo-700 font-bold">RS</p>
                 </div>
                 <svg
+                  onClick={() => setDropdown(!dropdown)}
                   xmlns="http://www.w3.org/2000/svg"
                   className={`duration-300 ease-in-out ${
                     dropdown ? "rortate-0 " : "rotate-180 transform"

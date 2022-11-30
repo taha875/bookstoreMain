@@ -28,10 +28,7 @@ function Table({ title, data }) {
                       <td className="pl-4">{el.id}</td>
                       <td className="pl-11">
                         <div className="flex items-center">
-                          <a
-                            className="hover:text-indigo-700 transition ease-in-out delay-110 hover:-translate-y-1  hover:scale-130  duration-250"
-                            href=""
-                          >
+                          <a className="hover:text-indigo-700 " href="">
                             {el.bookname}
                           </a>
                         </div>

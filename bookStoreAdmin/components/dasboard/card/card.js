@@ -5,7 +5,7 @@ import Router from "next/router";
 export default function card() {
   return (
     <>
-      <div className="container mx-auto flex flex-wrap gap-4 items-center w-full py-8 ml-12 drop-shadow-xl">
+      <div className="container mx-auto flex flex-wrap gap-4 items-center w-full py-8 pl-8 drop-shadow-xl">
         {Cardsdata.map((Cardsdata) => {
           return (
             <>
