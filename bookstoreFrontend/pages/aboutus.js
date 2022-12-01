@@ -4,17 +4,17 @@ function aboutus() {
   return (
     <>
       <div>
-        <p className="container mx-auto rounded text-5xl font-semibold leading-9 bg-yellow-800  text-white w-full h-14 items-center pt-2 pl-1">
+        <div className="container mx-auto rounded text-5xl font-semibold leading-9 bg-yellow-800  text-white w-full h-14 items-center pt-2 pl-1">
           About Us
-        </p>
+        </div>
 
         <div className="flex justify-center container mx-auto mt-10">
           <div>
-            <p className="text-gray-800 font-medium text-justify mr-3">
-              <p className="font-bold text-center">
+            <div className="text-gray-800 font-medium text-justify mr-3">
+              <div className="font-bold text-center">
                 Welcome to Islamic Books Library, the Authentic Source for
                 Authentic Islamic Books!
-              </p>
+              </div>
               This Is a Pure Islamic Blog and Publishes English & Urdu Islamic
               Books on Different Topics Time to Time. The Sole Purpose of This
               Blog Is to Spread the Correct Information of Deen in This Day &
@@ -68,7 +68,7 @@ function aboutus() {
               <br />
               <br />
               JazakAllah
-            </p>
+            </div>
           </div>
           <div>
             <img
@@ -80,9 +80,9 @@ function aboutus() {
       </div>
       <div>
         <div className="container mx-auto flex justify-start mt-2">
-          <p className=" text-4xl items-center text-yellow-700">
+          <div className=" text-4xl items-center text-yellow-700">
             How To Download
-          </p>
+          </div>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             class="icon icon-tabler icon-tabler-download"
@@ -103,7 +103,7 @@ function aboutus() {
           </svg>
         </div>
 
-        <p className="text-gray-800 font-medium text-justify container mx-auto">
+        <div className="text-gray-800 font-medium text-justify container mx-auto">
           Please Right Click on the Picture of the Required Book or if More Than
           One Link Is Given Due to Quality or Volumes Right Click on the Links
           <br />
@@ -113,12 +113,14 @@ function aboutus() {
           <br />
           <br />
           JazakAllah
-        </p>
+        </div>
       </div>
       <div>
         <div className="container mx-auto  justify-start mt-2">
-          <p className=" text-4xl items-center text-yellow-700">Disclamier</p>
-          <p className="text-gray-800 font-medium text-justify container mx-auto">
+          <div className=" text-4xl items-center text-yellow-700">
+            Disclamier
+          </div>
+          <div className="text-gray-800 font-medium text-justify container mx-auto">
             All Books Are Provided Purely for Educational and Research Purposes,
             Please Do Not Abuse the Service by Using It for Commercial Purposes.
             Everything Has Been Collected From the Free Internet Sources. The
@@ -143,14 +145,14 @@ function aboutus() {
             Research and Educational or Criticism Purposes Only. Notwithstanding
             the Provisions of Sections 106 and 106A, the Fair Use of a
             Copyrighted Work, Including Such Use by Reproduction in Copies or
-            Photo Records or by Any Other Means Specified by That Section, for
+            Photo Records or by Any  Other Means Specified by That Section, for
             Purposes Such as Criticism, Comment, News Reporting, Teaching
             (Including Multiple Copies for Classroom Use), Scholarship, or
             Research, Is Not an Infringement of Copyright.
             <br />
             <br />
             JazakAllah
-          </p>
+          </div>
         </div>
       </div>
     </>

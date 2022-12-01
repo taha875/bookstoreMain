@@ -5,7 +5,7 @@ function home() {
     <>
       <div className="h-[500px] overflow-hidden relative flex flex-col items-center ">
         <Nav />
-        <div className="relative z-30 mt-12">
+        <div className="relative z-10 mt-12">
           <img
             className="flex flex-col items-center justify-center ml-32"
             src="https://i.ibb.co/JrM9hWC/bsml-txt.png"
