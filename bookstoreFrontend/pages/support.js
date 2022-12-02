@@ -1,15 +1,16 @@
 import React from "react";
 import Home from "../components/LandingPage/home/home";
 import Footer from "../components/layout/footer";
-import Aboutus from "../components/Aboutus/index";
-const aboutus = () => {
+import Support from "../components/Support/index";
+
+const support = () => {
   return (
-    <div>
+    <>
       <Home />
-      <Aboutus />
+      <Support />
       <Footer />
-    </div>
+    </>
   );
 };
 
-export default aboutus;
+export default support;
