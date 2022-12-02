@@ -1,6 +1,7 @@
 import React from "react";
 import Router from "next/router";
 function navbar() {
+  const [dropdown, setDropdown] = React.useState(false);
   return (
     <nav className="relative z-30">
       <div>
@@ -15,14 +16,64 @@ function navbar() {
               className="flex cursor-pointer mx-4 text-gray-300 text-sm leading-3 tracking-normal  hover:text-yellow-800 focus:text-indigo-700 focus:outline-none "
               onclick="dropdownHandler(this)"
             >
-              <a href=".html">
+              <a onClick={() => Router.push("/support")}>
                 <span className="ml-2 font-bold">Support</span>
               </a>
             </li>
-            <li className=" flex cursor-pointer mx-4 text-gray-300 text-sm leading-3 tracking-normal  hover:text-yellow-800 focus:text-indigo-700 focus:outline-none">
-              <a href=".html">
-                <button className="ml-2 font-bold">Offering</button>
-              </a>
+
+            <li className="flex cursor-pointer mx-4 text-gray-300 text-sm leading-3 tracking-normal  hover:text-yellow-800 focus:text-indigo-700 focus:outline-none">
+              <button
+                className={`flex flex-row justify-center duration-300 ease-in-out "ml-2 font-bold ${
+                  dropdown ? "" : ""
+                }`}
+                onClick={() => setDropdown(!dropdown)}
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className={`mr-1 duration-300 ease-in-out ${
+                    dropdown ? "rortate-0 " : "rotate-180 transform"
+                  }`}
+                  width={16}
+                  height={16}
+                  viewBox="0 0 24 24"
+                  strokeWidth="1.5"
+                  stroke="#9e9e9e"
+                  fill="none"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <polyline points="6 9 12 15 18 9" />
+                </svg>
+                Offering
+              </button>
+              <div
+                className={`${
+                  dropdown ? `w-32 h-[228px]` : `w-0 h-0`
+                }   rounded-md shadow-lg overflow-hidden bg-white duration-300 ease-in-out top-16 z-30 absolute z-[80]`}
+              >
+                .
+                <ul className="text-sm font-normal">
+                  <li className="px-4 py-2 hover:bg-yellow-700 hover:text-white cursor-pointer">
+                    Books
+                  </li>
+                  <li className="px-4 py-2 hover:bg-yellow-700 hover:text-white cursor-pointer">
+                    Audio
+                  </li>
+                  <li className="px-4 py-2 hover:bg-yellow-700 hover:text-white cursor-pointer">
+                    Video
+                  </li>
+                  <li className="px-4 py-2 hover:bg-yellow-700 hover:text-white cursor-pointer">
+                    Nasheed
+                  </li>
+                  <li className="px-4 py-2 hover:bg-yellow-700 hover:text-white cursor-pointer">
+                    Islamic Posters
+                  </li>
+                  <li className="px-4 py-2 hover:bg-yellow-700 hover:text-white cursor-pointer">
+                    Islamic Links
+                  </li>
+                </ul>
+              </div>
             </li>
             <li
               className="flex cursor-pointer mx-4 text-gray-300 text-sm leading-3 tracking-normal  hover:text-yellow-800 focus:text-indigo-700 focus:outline-none "
@@ -36,7 +87,7 @@ function navbar() {
               className="flex cursor-pointer mx-4 text-gray-300 text-sm leading-3 tracking-normal  hover:text-yellow-800 focus:text-indigo-700 focus:outline-none"
               onclick="dropdownHandler(this)"
             >
-              <a href="/aboutus">
+              <a onClick={() => Router.push("/aboutus")}>
                 <span className="ml-2 font-bold">About Us</span>
               </a>
             </li>
