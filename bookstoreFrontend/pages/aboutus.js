@@ -1,10 +1,12 @@
 import React from "react";
-
+import Home from "../components/LandingPage/home/home"
+import Footer from "../components/layout/footer"
 function aboutus() {
   return (
     <>
+    <Home/>
       <div>
-        <p className="container mx-auto rounded text-5xl font-semibold leading-9 bg-yellow-800  text-white w-full h-14 items-center pt-2 pl-1">
+        <p className="container mx-auto text-5xl font-semibold mt-6 flex justify-center text-yellow-800 ">
           About Us
         </p>
 
@@ -153,6 +155,7 @@ function aboutus() {
           </p>
         </div>
       </div>
+      <Footer/>
     </>
   );
 }

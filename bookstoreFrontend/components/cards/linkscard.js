@@ -1,31 +1,31 @@
 import React from "react";
-import Books from "../books/books.json";
-function bookcard() {
+import Linkscard from "../DataArrays/linksdata.json"
+function linkscard() {
   return (
     <>
       <div className="container mx-auto mt-6 grid  bg-gray-200 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-8">
-        {Books.map((book) => (
+        {Linkscard.map((data) => (
           <div className="relative pt-16 pb-24 bg-gray-100 w-52 h-56 px-16 flex justify-center items-center">
-            <img className src={book.img} />
+            <img className src={data.img} />
 
             <div className="flex flex-col absolute bottom-4 left-4 w-full pr-8">
               <div>
                 <p className="text-base leading-none text-gray-900">
-                  {book.name}
+                  {data.name}
                 </p>
               </div>
               <div className="flex justify-between mt-2">
                 <div>
                   <p className="text-base font-semibold leading-none text-gray-800">
-                    {book.price}
+                    {data.price}
                   </p>
                 </div>
                 <button className="cursor-pointer hover:opacity-75">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     class="icon icon-tabler icon-tabler-shopping-cart"
-                    width="32"
-                    height="32"
+                    width="24"
+                    height="24"
                     viewBox="0 0 24 24"
                     stroke-width="1.5"
                     stroke="#a16207"
@@ -49,4 +49,4 @@ function bookcard() {
   );
 }
 
-export default bookcard;
+export default linkscard;
