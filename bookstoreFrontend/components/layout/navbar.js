@@ -87,7 +87,7 @@ function navbar() {
               className="flex cursor-pointer mx-4 text-gray-300 text-sm leading-3 tracking-normal  hover:text-yellow-800 focus:text-indigo-700 focus:outline-none"
               onclick="dropdownHandler(this)"
             >
-              <a href="/aboutus">
+              <a onClick={() => Router.push("/aboutus")}>
                 <span className="ml-2 font-bold">About Us</span>
               </a>
             </li>

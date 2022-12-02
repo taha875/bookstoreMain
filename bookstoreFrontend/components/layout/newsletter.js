@@ -23,7 +23,7 @@ const Newsletter = () => {
                 placeholder="Enter your Email to join"
                 className="bg-white border rounded-md placeholder-gray-400 border-gray-300 p-4 w-full lg:w-1/2 focus:outline-none"
               />
-              <button className="px-8 py-4 bg-yellow-700 rounded-md text-white font-medium text-base focus:outline-none focus:ring-2 focus:ring-yellow-900 focus:ring-opacity-50 hover:bg-yellow-900 w-full md:w-auto">
+              <button className="px-8 py-4 bg-yellow-700 rounded-md text-white font-medium text-base focus:outline-none focus:ring-2 focus:ring-yellow-900 focus:ring-opacity-50 hover:bg-yellow-900 w-full md:w-auto transform duration-300 ease-in-out">
                 Subscribe
               </button>
             </div>

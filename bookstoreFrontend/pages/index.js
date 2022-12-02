@@ -12,8 +12,8 @@ export default function home() {
       <Home />
       <WhatWeOffer />
       <Cards />
-      <Newsletter />
-      <Footer />
+      <Newsletter/>
+      <Footer/>
     </>
   );
 }

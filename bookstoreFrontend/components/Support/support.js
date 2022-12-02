@@ -57,13 +57,13 @@ function support() {
                             }   rounded-md shadow-lg overflow-hidden bg-white duration-300 ease-in-out  absolute  z-30`}
                           >
                             <ul className="text-sm font-normal">
-                              <li className="px-4 py-2 hover:bg-indigo-700 hover:text-white cursor-pointer">
+                              <li className="px-4 py-2 hover:bg-yellow-700 hover:text-white cursor-pointer">
                                 Website Bug
                               </li>
-                              <li className="px-4 py-2 hover:bg-indigo-700 hover:text-white cursor-pointer">
+                              <li className="px-4 py-2 hover:bg-yellow-700 hover:text-white cursor-pointer">
                                 Purchase Issue
                               </li>
-                              <li className="px-4 py-2 hover:bg-indigo-700 hover:text-white cursor-pointer">
+                              <li className="px-4 py-2 hover:bg-yellow-700 hover:text-white cursor-pointer">
                                 Other
                               </li>
                             </ul>
@@ -212,10 +212,10 @@ function support() {
                 </p>
                 <hr className="h-[1px] bg-gray-100 my-14" />
                 <div className="flex flex-col flex-wrap items-center justify-center w-full px-7 lg:flex-row lg:justify-end md:justify-end gap-x-4 gap-y-4">
-                  <button className="bg-white border-indigo-700 rounded hover:bg-gray-50 transform duration-300 ease-in-out text-sm font-medium px-6 py-4 text-indigo-700 border lg:max-w-[95px]  w-full ">
+                  <button className="bg-white border-gray-700 rounded hover:bg-gray-50 transform duration-300 ease-in-out text-sm font-medium px-6 py-4 text-yellow-700 border lg:max-w-[95px]  w-full ">
                     Cancel
                   </button>
-                  <button className="bg-indigo-700 rounded hover:bg-indigo-600 transform duration-300 ease-in-out text-sm font-medium px-6 py-4 text-white lg:max-w-[144px] w-full ">
+                  <button className="bg-yellow-700 rounded hover:bg-yellow-900 transform duration-300 ease-in-out text-sm font-medium px-6 py-4 text-white lg:max-w-[144px] w-full ">
                     Done
                   </button>
                 </div>
