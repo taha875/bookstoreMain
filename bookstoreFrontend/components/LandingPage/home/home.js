@@ -16,7 +16,7 @@ function home() {
           <p className="text-2xl  mt-2 text-white text-center">
             Authnetic Source For Authnetic Islamic Books
           </p>{" "}
-          <div className="flex items-center pl-3 bg-white border xk:w-96 rounded border-gray-200 transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-yellow-800 focus:outline-none mt-2">
+          <div className="flex items-center pl-3  bg-white border xk:w-96 rounded border-gray-200 transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-yellow-800 focus:outline-none mt-5">
             <svg
               className="text-gray-500"
               xmlns="http://www.w3.org/2000/svg"

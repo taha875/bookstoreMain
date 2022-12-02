@@ -7,7 +7,7 @@ export default function Index() {
 
   return (
     <>
-    <Home/>
+      <Home />
       <div className="mx-auto container py-12 px-4">
         <div className="flex flex-col w-full xl:flex-row justify-center">
           {/* Menu Start */}
@@ -103,7 +103,7 @@ export default function Index() {
           <div className="flex flex-col justify-start">
             <div className="flex justify-between items-end w-full">
               <div>
-                <p className="text-4xl font-semibold leading-9 bg-yellow-800 rounded-lg text-white w-96 h-12 items-center pt-1 pl-1">
+                <p className="text-4xl font-semibold  text-yellow-800">
                   Useful Links
                 </p>
               </div>
@@ -231,7 +231,7 @@ export default function Index() {
           {/* Cards End */}
         </div>
       </div>
-      <Footer/>
+      <Footer />
     </>
   );
 }

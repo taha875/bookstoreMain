@@ -1,5 +1,5 @@
 import React from "react";
-import Router from "next/router"; 
+import Router from "next/router";
 function footer() {
   return (
     <>
@@ -19,25 +19,12 @@ function footer() {
           <button
             className="mx-6"
             type="button"
-            onClick={() => Router.push("")}
+            onClick={() => Router.push("/support")}
           >
             Support
           </button>
 
-          <button
-            className="mx-6"
-            type="button"
-            onClick={() => Router.push("")}
-          >
-            Offering
-          </button>
-          <button
-            className="mx-6"
-            type="button"
-            onClick={() => Router.push("")}
-          >
-            Acknowlegment
-          </button>
+
           <button
             className="mx-6"
             type="button"

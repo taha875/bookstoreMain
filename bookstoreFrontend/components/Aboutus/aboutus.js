@@ -1,5 +1,6 @@
 import React from "react";
 
+
 const aboutus = () => {
   return (
     <div className="2xl:container 2xl:mx-auto lg:py-16 lg:px-20 md:py-12 md:px-6 py-9 px-4">
@@ -99,13 +100,40 @@ const aboutus = () => {
             Our Mission
           </h2>
           <p className="font-normal text-base leading-6 text-gray-600 mt-6 w-full lg:w-10/12 xl:w-9/12"></p>
-          <p className="font-normal text-base leading-6 text-gray-600 w-full lg:w-10/12 xl:w-9/12 mt-10"></p>
+
           <p className="font-normal text-base leading-6 text-gray-600 w-full lg:w-10/12 xl:w-9/12 mt-10">
             Through This Blog Inshallah I Intend to Publish Books of the Middle
             & Correct Path of Ahlus Sunnah Wal Jamaah, as Shown to Us by Salaf
             As-Saliheen.
           </p>
+          <h2 className="mt-12 font-bold lg:text-4xl text-3xl lg:leading-9 leading-7 text-gray-800">
+            Acknowledgement
+          </h2>
+          <p className="font-normal text-base leading-6 text-gray-600 w-full lg:w-10/12 xl:w-9/12 mt-10">
+            A Few Websites and Individuals Have Been of Paramount Importance in
+            Sharing Good Books on the Internet and Hence I Shall Acknowledge &
+            Thank Them for Giving All of Us the Opportunity to Read and Share
+            Some Very Important Books Which Otherwise Would Be Out of the Reach
+            of a Major Urdu Speaking Muslim Population Living Around the World.
+          </p>
+        
+            <li>Brother Saqib Khan</li>
+            <li>
+              <a herf="http://www.rahesunnat.wordpress.com/" />
+            </li>
+            <li>
+              <a herf="http://www.e-iqra.info/" />
+            </li>
+            <li>
+           
+            </li>
+            <li>
+              <a className="text-black" herf="http://www.ahsanululoom.com/"/>
+            </li>
+              <a herf="http://www.ahnafmedia.com/" />
+            <li>Brother Imdad Ali</li>
         </div>
+
         <div className="w-full lg:w-6/12">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 lg:gap-12 gap-10">
             {/* <!-- Team Card --> */}
