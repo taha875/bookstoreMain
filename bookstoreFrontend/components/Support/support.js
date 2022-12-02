@@ -2,7 +2,7 @@ import React from "react";
 
 function support() {
   const [dropdown, setDropdown] = React.useState(false);
-
+  const [showModal, setShowModal] = React.useState(false);
   return (
     <>
       <div className="px-2 py-12 ">
@@ -215,7 +215,10 @@ function support() {
                   <button className="bg-white border-gray-700 rounded hover:bg-gray-50 transform duration-300 ease-in-out text-sm font-medium px-6 py-4 text-yellow-700 border lg:max-w-[95px]  w-full ">
                     Cancel
                   </button>
-                  <button className="bg-yellow-700 rounded hover:bg-yellow-900 transform duration-300 ease-in-out text-sm font-medium px-6 py-4 text-white lg:max-w-[144px] w-full ">
+                  <button
+                    className="bg-yellow-700 rounded hover:bg-yellow-900 transform duration-300 ease-in-out text-sm font-medium px-6 py-4 text-white lg:max-w-[144px] w-full "
+                    onClick={() => setShowModal(true)}
+                  >
                     Done
                   </button>
                 </div>
@@ -224,6 +227,44 @@ function support() {
           </div>
         </div>
       </div>
+      {showModal ? (
+        <>
+          <div className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none">
+            <div className="relative w-full my-6 mx-auto max-w-3xl">
+              <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
+                <div className="flex items-start justify-between p-5 border-b border-solid border-slate-200 rounded-t">
+                  <h3 className="text-3xl font-semibold">Thank You</h3>
+                  <button
+                    className="p-1 ml-auto bg-transparent border-0 text-black opacity-5 float-right text-3xl leading-none font-semibold outline-none focus:outline-none"
+                    onClick={() => setShowModal(false)}
+                  >
+                    <span className="bg-transparent text-black opacity-5 h-6 w-6 text-2xl block outline-none focus:outline-none">
+                      ×
+                    </span>
+                  </button>
+                </div>
+
+                <div className="relative p-6 flex-auto">
+                  <p className="my-4 text-slate-500 text-lg leading-relaxed">
+                    We will respond to your email soon.
+                  </p>
+                </div>
+
+                <div className="flex items-center justify-end p-6 border-t border-solid border-slate-200 rounded-b">
+                  <button
+                    className="bg-yellow-700 text-white active:bg-gray-400 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-yellow-800 duration-250"
+                    type="button"
+                    onClick={() => setShowModal(false)}
+                  >
+                    Close
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="opacity-25 fixed inset-0 z-40 bg-black"></div>
+        </>
+      ) : null}
     </>
   );
 }
