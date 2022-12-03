@@ -70,8 +70,6 @@ const header = () => {
                 <div className="w-8 h-8 lg:mb-0 bg-cover rounded-full mr-2 flex justify-center items-center bg-gray-100 dark:bg-gray-800 shadow-md">
                   <p className="text-indigo-700 font-bold">RS</p>
                 </div>
-<<<<<<< HEAD
-=======
                 <svg
                   onClick={() => setDropdown(!dropdown)}
                   xmlns="http://www.w3.org/2000/svg"
@@ -90,7 +88,6 @@ const header = () => {
                   <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                   <polyline points="6 9 12 15 18 9" />
                 </svg>
->>>>>>> 66d0aa6b9b1138956afb5c4da1d23d4386e9f303
 
                 <div
                   className={`${
