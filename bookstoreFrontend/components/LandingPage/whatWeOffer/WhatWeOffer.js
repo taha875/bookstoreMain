@@ -60,7 +60,7 @@ function WhatWeOffer() {
                 return (
                   <>
                     <div className=" bg-yellow-700 rounded-xl shadow-lg w-full h-12 mb-4 container grid grid-cols-3 gap-8 mt-4 ">
-                      <div key={i}> </div>
+                      <div key={i}> </div> 
                       <div className="text-white text-center flex justify-center items-center  ">
                         <Icons iconElement={el.svg} />
                         <div className="m-2"> {el.name}</div>
