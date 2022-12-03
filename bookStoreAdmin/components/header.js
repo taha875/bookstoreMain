@@ -7,8 +7,6 @@ const header = () => {
     <nav class="bg-white border-gray-200 rounded dark:bg-white-900 w-full  ">
       <div class="container flex flex-wrap items-center justify-between w-full pl-6">
         <div className="flex items-center pl-3 bg-white border w-64 rounded border-gray-200">
-        
-        
           <svg
             className="text-gray-500"
             xmlns="http://www.w3.org/2000/svg"
@@ -93,25 +91,6 @@ const header = () => {
                 <div className="w-8 h-8 lg:mb-0 bg-cover rounded-full mr-2 flex justify-center items-center bg-gray-100 dark:bg-gray-800 shadow-md">
                   <p className="text-indigo-700 font-bold">RS</p>
                 </div>
-                <svg
-                  onClick={() => setDropdown(!dropdown)}
-                  xmlns="http://www.w3.org/2000/svg"
-                  className={`duration-300 ease-in-out ${
-                    dropdown ? "rortate-0 " : "rotate-180 transform"
-                  }`}
-                  width={16}
-                  height={16}
-                  viewBox="0 0 24 24"
-                  strokeWidth="1.5"
-                  stroke="#9e9e9e"
-                  fill="none"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                >
-                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                  <polyline points="6 9 12 15 18 9" />
-                </svg>
-
 
                 <div
                   className={`${
