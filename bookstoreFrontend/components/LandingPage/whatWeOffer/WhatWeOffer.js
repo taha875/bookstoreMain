@@ -15,6 +15,8 @@ function WhatWeOffer() {
       name: "Posters",
       svg: "posters",
     },
+  ];
+  const data2 = [
     {
       name: "Links",
       svg: "links",
@@ -37,31 +39,54 @@ function WhatWeOffer() {
         </h2>
 
         <div className="text-gray-800 text-center font font-semibold ">
-          The Sole Purpose of Our Work is to Spread the Correct Information Of
-          Deen in This Day & Age of Fitnah.
-          <br /> <span className="font-bold">Our Offering</span>{" "}
+          <br /> <h className="font-bold text-2xl">Our Offerings</h>{" "}
         </div>
       </div>
-      <div className="mt-8 flex justify-center container items-center ">
-        <img
-          className=" w-auto h-80 mr-24"
-          src="https://i.ibb.co/Zm8CcZs/hstry-img.png"
-        />
 
-        <div>
-          {data.map((el, i) => {
-            return (
-              <>
-                <div className=" bg-yellow-700 rounded-xl shadow-lg w-full h-12 mb-4 container grid grid-cols-3 gap-8">
-                  <div key={i}> </div>
-                  <div className="text-white text-center flex justify-center items-center  ">
-                    <Icons iconElement={el.svg} />
-                    <div className="m-2"> {el.name}</div>
-                  </div>
-                </div>
-              </>
-            );
-          })}
+      <div className="flex justify-between mb-5 mt-5">
+        <div className="flex justify-center items-center ">
+          <div className="h-[380px] w-[380px] border-[15px] absolute border-yellow-500"></div>
+          <img
+            className="z-20"
+            src="https://nauthemes.net/alim/wp-content/uploads/2020/05/hstry-img.png"
+          ></img>
+        </div>
+        <div className="w-4/5">
+          {/* Card is full width. Use in 12 col grid for best view. */}
+          {/* Card code block start */}
+          <div className=" ml-12 flex flex-col lg:flex-row mx-auto bg-white dark:bg-gray-800 shadow rounded">
+            <div className="w-full lg:w-1/3 flex-col lg:border-l border-gray-300 flex justify-center items-center px-12 py-8">
+              {data.map((el, i) => {
+                return (
+                  <>
+                    <div className=" bg-yellow-700 rounded-xl shadow-lg w-full h-12 mb-4 container grid grid-cols-3 gap-8 mt-4 ">
+                      <div key={i}> </div>
+                      <div className="text-white text-center flex justify-center items-center  ">
+                        <Icons iconElement={el.svg} />
+                        <div className="m-2"> {el.name}</div>
+                      </div>
+                    </div>
+                  </>
+                );
+              })}
+            </div>
+            <div className="w-full lg:w-1/3 px-12 lg:border-l border-gray-300 flex flex-col items-center py-10">
+              {data2.map((el, i) => {
+                return (
+                  <>
+                    <div className=" bg-yellow-700 rounded-xl shadow-lg w-full h-12 mb-4 container grid grid-cols-3 gap-8 mt-4 ">
+                      <div key={i}> </div>
+                      <div className="text-white text-center flex justify-center items-center  ">
+                        <Icons iconElement={el.svg} />
+                        <div className="m-2"> {el.name}</div>
+                      </div>
+                    </div>
+                  </>
+                );
+              })}
+            </div>
+          </div>
+          {/* Card code block end */}
         </div>
       </div>
     </div>
