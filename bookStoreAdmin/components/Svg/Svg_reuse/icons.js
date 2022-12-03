@@ -5,6 +5,7 @@ import Link from "../link";
 import Video from "../video";
 import Nasheeds from "../nasheed";
 import Posters from "../poster";
+import Info from "../info";
 
 function icon({ iconparam }) {
   switch (iconparam) {
@@ -25,6 +26,9 @@ function icon({ iconparam }) {
       break;
     case "Posters":
       iconparam = <Posters />;
+      break;
+    case "Info":
+      iconparam = <Info />;
       break;
     default:
   }

@@ -40,7 +40,7 @@ export default function Index() {
         id="Main"
         className={`${
           show ? "-translate-x-full" : "translate-x-0"
-        } bg-white transform  xl:translate-x-0 ease-in-out transition duration-500 flex justify-start items-start w-full border-r border-gray-300 w-64  flex-col h-screen`}
+        } bg-white transform  xl:translate-x-0 ease-in-out transition duration-500 flex justify-start items-start  border-r border-gray-200 w-64  flex-col h-screen`}
       >
         <div className="m-auto mt-4">
           <svg

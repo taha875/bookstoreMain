@@ -1,3 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.hFixed {
+  height: calc(100vh - 130px);
+}
+
+/* width */
+.tables::-webkit-scrollbar {
+  width: 1px;
+}
