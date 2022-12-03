@@ -1,31 +1,35 @@
 import React from "react";
-import Nasheedsdata from "../Nasheed/Nasheedsdata.json";
-function nasheedcard() {
+import Books from "../DataArrays/books.json";
+
+
+function bookcard() {
   return (
     <>
-      <div className="container mx-auto mt-6 grid  bg-gray-200 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-8">
-        {Nasheedsdata.map((data) => (
-          <div className="relative pt-16 pb-24 bg-gray-100 w-52 h-56 px-16 flex justify-center items-center">
-            <img className src={data.img} />
+      <div className="container mx-auto mt-6 items-center grid md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-8">
+        {Books.map((book) => (
+          <div className="relative pt-16 pb-24 bg-gray-50 w-52 h-56 px-16 flex justify-center items-center">
+            <div className="  object-cover rounded-t-lg h-auto w-full  ">
+              <img className="h-32 w-full  " src={book.img} />
+            </div>
 
             <div className="flex flex-col absolute bottom-4 left-4 w-full pr-8">
               <div>
                 <p className="text-base leading-none text-gray-900">
-                  {data.name}
+                  {book.name}
                 </p>
               </div>
               <div className="flex justify-between mt-2">
                 <div>
                   <p className="text-base font-semibold leading-none text-gray-800">
-                    {data.price}
+                    {book.price}
                   </p>
                 </div>
                 <button className="cursor-pointer hover:opacity-75">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     class="icon icon-tabler icon-tabler-shopping-cart"
-                    width="32"
-                    height="32"
+                    width="24"
+                    height="24"
                     viewBox="0 0 24 24"
                     stroke-width="1.5"
                     stroke="#a16207"
@@ -49,4 +53,4 @@ function nasheedcard() {
   );
 }
 
-export default nasheedcard;
+export default bookcard;
