@@ -31,7 +31,7 @@ function navbar() {
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className={`mr-1 duration-300 ease-in-out ${
-                    dropdown ? "rortate-0 " : "rotate-180 transform"
+                    dropdown && "rotate-180 transform"
                   }`}
                   width={16}
                   height={16}
@@ -75,14 +75,7 @@ function navbar() {
                 </ul>
               </div>
             </li>
-            <li
-              className="flex cursor-pointer mx-4 text-gray-300 text-sm leading-3 tracking-normal  hover:text-yellow-800 focus:text-indigo-700 focus:outline-none "
-              onclick="dropdownHandler(this)"
-            >
-              <a href="">
-                <span className="ml-2 font-bold">Acknowlegment</span>
-              </a>
-            </li>
+         
             <li
               className="flex cursor-pointer mx-4 text-gray-300 text-sm leading-3 tracking-normal  hover:text-yellow-800 focus:text-indigo-700 focus:outline-none"
               onclick="dropdownHandler(this)"

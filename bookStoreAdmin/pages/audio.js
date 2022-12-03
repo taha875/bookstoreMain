@@ -1,6 +1,6 @@
 import React from "react";
 import Layout from "../components/layout";
-import Audio from "../components/audiotable/index";
+import Audio from "../components/audio/index";
 
 const audiodash = () => {
   return (

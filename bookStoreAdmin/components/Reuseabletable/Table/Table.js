@@ -1,10 +1,10 @@
 import React from "react";
 
-function Table({ title, data }) {
+function Table({ title, data, NaviagateTo }) {
   const [show, setShow] = React.useState();
   return (
     <>
-      <div className="bg-white px-4 md:px-8 xl:px-10 overflow-x-auto">
+      <div className="bg-white overflow-x-auto mt-8">
         <table className="w-full whitespace-nowrap">
           <thead>
             <tr className="h-20 w-full text-sm leading-none text-gray-600">
@@ -12,7 +12,7 @@ function Table({ title, data }) {
               <th className="font-normal text-left pl-11">{title} Name</th>
               <th className="font-normal text-left pl-10">Price</th>
               <th className="font-normal text-left">Created</th>
-              <th className="font-normal text-left">{title} Descrition</th>
+              <th className="font-normal text-left">{title} Description</th>
               <th className="font-normal text-left w-32">Actions</th>
             </tr>
           </thead>
@@ -22,19 +22,20 @@ function Table({ title, data }) {
                 {data?.map((el, i) => {
                   return (
                     <tr
+                      onClick={() => NaviagateTo(el.id)}
                       key={i}
                       className="h-20 text-sm leading-none text-gray-700 border-b border-t border-gray-200 bg-white hover:bg-gray-50 cursor-pointer"
                     >
                       <td className="pl-4">{el.id}</td>
                       <td className="pl-11">
                         <div className="flex items-center">
-                          <a className="hover:text-indigo-700 " href="">
-                            {el.bookname}
-                          </a>
+                          <p>{el.bookname}</p>
                         </div>
                       </td>
                       <td>
-                        <p className="mr-16 pl-10">{el.bookPrice} </p>
+                        <p className="mr-16 pl-10">
+                          {el.bookPrice ? `${el.bookPrice}` : `Free`}{" "}
+                        </p>
                       </td>
                       <td>
                         <p className="mr-16">{el.date}</p>

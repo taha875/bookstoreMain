@@ -5,7 +5,7 @@ const header = () => {
   return (
     // vertical nav bar
     <nav class="bg-white border-gray-200 rounded dark:bg-white-900 w-full  ">
-      <div class="container flex flex-wrap items-center justify-between w-full pl-6">
+      <div class=" flex  items-center justify-between w-full pl-6">
         <div className="flex items-center pl-3 bg-white border w-64 rounded border-gray-200">
           <svg
             className="text-gray-500"
@@ -36,28 +36,7 @@ const header = () => {
             placeholder="Search"
           />
         </div>
-        <button
-          data-collapse-toggle="navbar-default"
-          type="button"
-          class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-          aria-controls="navbar-default"
-          aria-expanded="false"
-        >
-          <span class="sr-only">Open main menu</span>
-          <svg
-            class="w-6 h-6"
-            aria-hidden="true"
-            fill="currentColor"
-            viewBox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              fill-rule="evenodd"
-              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-              clip-rule="evenodd"
-            ></path>
-          </svg>
-        </button>
+
         <div
           class="hidden w-full md:block md:w-auto relative"
           id="navbar-default"
@@ -91,6 +70,27 @@ const header = () => {
                 <div className="w-8 h-8 lg:mb-0 bg-cover rounded-full mr-2 flex justify-center items-center bg-gray-100 dark:bg-gray-800 shadow-md">
                   <p className="text-indigo-700 font-bold">RS</p>
                 </div>
+<<<<<<< HEAD
+=======
+                <svg
+                  onClick={() => setDropdown(!dropdown)}
+                  xmlns="http://www.w3.org/2000/svg"
+                  className={`duration-300 ease-in-out ${
+                    dropdown ? "rortate-0 " : "rotate-180 transform"
+                  }`}
+                  width={16}
+                  height={16}
+                  viewBox="0 0 24 24"
+                  strokeWidth="1.5"
+                  stroke="#9e9e9e"
+                  fill="none"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <polyline points="6 9 12 15 18 9" />
+                </svg>
+>>>>>>> 66d0aa6b9b1138956afb5c4da1d23d4386e9f303
 
                 <div
                   className={`${

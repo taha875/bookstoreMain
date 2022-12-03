@@ -1,10 +1,10 @@
 import React from "react";
-import Posterdata from "../posters/posterdata.json";
-function postercard() {
+import Videodata from "../DataArrays/videodata.json";
+function videocard() {
   return (
     <>
       <div className="container mx-auto mt-6 grid  bg-gray-200 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-8">
-        {Posterdata.map((data) => (
+        {Videodata.map((data) => (
           <div className="relative pt-16 pb-24 bg-gray-100 w-52 h-56 px-16 flex justify-center items-center">
             <img className src={data.img} />
 
@@ -24,8 +24,8 @@ function postercard() {
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     class="icon icon-tabler icon-tabler-shopping-cart"
-                    width="32"
-                    height="32"
+                    width="24"
+                    height="24"
                     viewBox="0 0 24 24"
                     stroke-width="1.5"
                     stroke="#a16207"
@@ -49,4 +49,4 @@ function postercard() {
   );
 }
 
-export default postercard;
+export default videocard;

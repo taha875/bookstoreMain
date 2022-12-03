@@ -1,9 +1,13 @@
 import React, { useState } from "react";
-import Postercard from "../posters/postercard"
+import Audiocard from "../components/cards/audiocard";
+import Home from "../components/LandingPage/home/home";
+import Footer from "../components/layout/footer";
 export default function Index() {
   const [show, setshow] = useState();
 
   return (
+    <>
+    <Home/>
     <div className="mx-auto container py-12 px-4">
       <div className="flex flex-col w-full xl:flex-row justify-center">
         {/* Menu Start */}
@@ -95,8 +99,8 @@ export default function Index() {
         <div className="flex flex-col justify-start">
           <div className="flex justify-between items-end w-full">
             <div>
-              <p className="text-4xl font-semibold leading-9 bg-yellow-800 rounded-lg text-white w-96 h-12 items-center pt-1 pl-1">
-                Islamic Posters
+              <p className="text-4xl font-semibold text-yellow-800">
+                Audios
               </p>
             </div>
             <div className="xl:hidden">
@@ -186,7 +190,7 @@ export default function Index() {
               </button>
             </div>
           </div>
-          <Postercard/>
+          <Audiocard/>
 
           {/* next page 123*/}
 
@@ -223,5 +227,7 @@ export default function Index() {
         {/* Cards End */}
       </div>
     </div>
+    <Footer/>
+    </>
   );
 }

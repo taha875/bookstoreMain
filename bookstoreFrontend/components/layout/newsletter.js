@@ -16,16 +16,27 @@ const Newsletter = () => {
             <div className="absolute top-5 right-5">
               <button onClick={() => setShow(false)}></button>
             </div>
+            <div class="container w-full ">
+              <div class="  flex justify-center items-center">
+                <div class="relative">
+                  <div class="absolute top-4 left-3">
+                    <i class="  text-gray-400 z-20 hover:text-gray-500"></i>
+                  </div>
+                  <div className="w-full">
+                    <input
+                      type="text"
+                      class="border border-gray-300 h-14 w-96 pl-4 pr-20 rounded-lg z-0 focus:shadow focus:outline-none"
+                      placeholder="Enter Your Email"
+                    />
 
-            <div className="flex justify-center flex-col md:flex-row gap-4 md:gap-7">
-              <input
-                type="email"
-                placeholder="Enter your Email to join"
-                className="bg-white border rounded-md placeholder-gray-400 border-gray-300 p-4 w-full lg:w-1/2 focus:outline-none"
-              />
-              <button className="px-8 py-4 bg-yellow-700 rounded-md text-white font-medium text-base focus:outline-none focus:ring-2 focus:ring-yellow-900 focus:ring-opacity-50 hover:bg-yellow-900 w-full md:w-auto transform duration-300 ease-in-out">
-                Subscribe
-              </button>
+                    <div class="absolute top-2 right-2">
+                      <button class="h-10 w-24 text-white rounded bg-yellow-700 hover:bg-yellow-800">
+                        Subscribe
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
