@@ -1,0 +1,66 @@
+[
+  {
+    "id": 1,
+    "bookname": "Poster",
+    "bookPrice": "5000",
+    "date": "2022/12/12",
+    "bookDescription": "Test",
+    "author": "author1",
+    "translator": "translator1",
+    "authenticatedBy": "authenticatedBy1",
+    "img": "https://images.unsplash.com/photo-1513001900722-370f803f498d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+  },
+  {
+    "id": 2,
+    "bookname": "Poster2",
+    "bookPrice": "50",
+    "date": "2022/1/12",
+    "bookDescription": "Test1",
+    "author": "author2",
+    "translator": "translator2",
+    "authenticatedBy": "authenticatedBy2",
+    "img": "https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+  },
+  {
+    "id": 3,
+    "bookname": "Poster3",
+    "date": "2022/2/12",
+    "bookDescription": "Test2",
+    "author": "author3",
+    "translator": "translator3",
+    "authenticatedBy": "authenticatedBy3",
+    "img": "https://images.unsplash.com/photo-1524578271613-d550eacf6090?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+  },
+  {
+    "id": 4,
+    "bookname": "Poster4",
+    "bookPrice": "5000",
+    "date": "2022/3/12",
+    "bookDescription": "Test3",
+    "author": "author4",
+    "translator": "translator4",
+    "authenticatedBy": "authenticatedBy4",
+    "img": "https://images.unsplash.com/photo-1513001900722-370f803f498d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+  },
+  {
+    "id": 5,
+    "bookname": "Poster5",
+    "date": "2022/4/12",
+    "bookDescription": "Test4",
+    "author": "author5",
+    "translator": "translator5",
+    "authenticatedBy": "authenticatedBy5",
+    "img": "https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+  },
+  {
+    "id": 6,
+    "bookname": "Poster6",
+    "bookPrice": "5000",
+    "date": "2022/5/12",
+    "author": "author6",
+    "translator": "translator6",
+    "authenticatedBy": "authenticatedBy6",
+    "bookDescription": "Test5",
+    "img": "https://images.unsplash.com/photo-1513001900722-370f803f498d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+  }
+]

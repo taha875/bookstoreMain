@@ -30,6 +30,9 @@ function icon({ iconparam }) {
     case "Info":
       iconparam = <Info />;
       break;
+    case "Subscriber":
+      iconparam = <Subscriber />;
+      break;
     default:
   }
   return <div>{iconparam}</div>;

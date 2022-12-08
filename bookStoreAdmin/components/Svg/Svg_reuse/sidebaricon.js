@@ -6,6 +6,7 @@ import Link from "../sidebarsvg/link";
 import Poster from "../sidebarsvg/poster";
 import Nasheed from "../sidebarsvg/nasheed";
 import Dashboard from "../sidebarsvg/dashboard";
+import Subscriber from "../sidebarsvg/subscriber";
 function sidebaricon({ iconparam }) {
   switch (iconparam) {
     case "Dashboard":
@@ -29,6 +30,9 @@ function sidebaricon({ iconparam }) {
     case "Poster":
       iconparam = <Poster />;
       break;
+      case "Subscriber":
+        iconparam = <Subscriber />;
+        break;
     default:
   }
   return <div>{iconparam}</div>;
