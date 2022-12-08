@@ -2,7 +2,7 @@ import React from "react";
 import Input from "../../Reuseabletable/Input/Input";
 import TextArea from "../../Reuseabletable/TextArea/TextArea";
 import Icon from "../../Svg/Svg_reuse/icons";
-function DisplayCard({ data, update }) {
+function DisplayCard({ data, update, page }) {
   console.log(data);
   return (
     <>
@@ -13,7 +13,7 @@ function DisplayCard({ data, update }) {
         <div className="w-full">
           <div className="flex items-center w-full gap-x-8">
             <Input
-              label={"Book Name"}
+              label={data.bookname + " Name"}
               placeholder={data.bookname}
               name={"bookname"}
               disabled={!update}
@@ -24,33 +24,42 @@ function DisplayCard({ data, update }) {
               disabled={!update}
             />
           </div>
-          <div className="flex items-center w-full gap-8 py-8">
-            <Input
-              label={"Translated By"}
-              placeholder={data.translator}
-              disabled={!update}
-            />
-            <Input
-              label={"Authenticated By"}
-              placeholder={data.authenticatedBy}
-              disabled={!update}
-            />
-          </div>
-          <div className="flex items-center gap-x-8">
-            <div className="w-1/2">
-              <Input
-                label={"Price"}
-                placeholder={data.bookPrice ? `${data.bookPrice}` : `Free`}
-                disabled={!update}
-              />
-            </div>
-            <div className="flex items-center gap-x-2 mt-9">
-              <Icon iconparam={"Info"} />
-              <p className="text-sm text-[#9e9e9e]">
-                Please leave Free if <span className="font-bold">Free</span>
-              </p>
-            </div>
-          </div>
+          {page != "Nasheed" && page != "Poster" && (
+            <>
+              <div
+                id="translatediv"
+                className="flex items-center w-full gap-8 py-8"
+              >
+                <div className="flex items-center w-full gap-8 py-8">
+                  <Input
+                    label={"Translated By"}
+                    placeholder={data.translator}
+                    disabled={!update}
+                  />
+                  <Input
+                    label={"Authenticated By"}
+                    placeholder={data.authenticatedBy}
+                    disabled={!update}
+                  />
+                </div>
+              </div>
+              <div className="flex items-center gap-x-8">
+                <div className="w-1/2">
+                  <Input
+                    label={"Price"}
+                    placeholder={data.bookPrice ? `${data.bookPrice}` : `Free`}
+                    disabled={!update}
+                  />
+                </div>
+                <div className="flex items-center gap-x-2 mt-9">
+                  <Icon iconparam={"Info"} />
+                  <p className="text-sm text-[#9e9e9e]">
+                    Please leave Free if <span className="font-bold">Free</span>
+                  </p>
+                </div>
+              </div>
+            </>
+          )}
         </div>
       </div>
       <div className="mt-4">

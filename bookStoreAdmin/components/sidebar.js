@@ -32,6 +32,10 @@ export default function Index() {
       name: "Links",
       link: "/link",
     },
+    {
+      name: "Subscriber",
+      link: "/subscriber",
+    },
   ];
   return (
     <>
