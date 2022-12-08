@@ -1,14 +1,20 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import Input from "../Reuseabletable/Input/Input";
 import Router from "next/router";
 function addbook() {
+  const [addedData, setAddedData] = useState([]);
+
+  const addDataToArray = () => {
+    setAddedData([(e.target.name = e.target.value)]);
+  };
+  console.log(addedData);
   return (
     <>
       <div className="py-12 px-4">
         <div className="lg:max-w-[1440px] md:max-w-[744px] max-w-[375px] mx-auto">
           <div className="lg:max-w-[1124px] md:max-w-[696px] max-w-[343px] mx-auto bg-white px-6 py-4 rounded shadow">
             <div className="pt-6">
-              <div className="lg:flex md:block block justify-between gap-4">
+              <form className="lg:flex md:block block justify-between gap-4">
                 <div className="w-full">
                   {/* <p className="text-base leading-none text-gray-800">
                     Admin Name{" "}
@@ -22,8 +28,19 @@ function addbook() {
                   /> */}
                   <Input
                     disabled={false}
+                    label={"ID"}
+                    name={"id"}
+                    onChange={(e) => {
+                      addDataToArray(e);
+                    }}
+                    placeholder={"Enter Book Id"}
+                  />
+                </div>
+                <div className="w-full">
+                  <Input
+                    disabled={false}
                     label={"Book Name"}
-                    placeholder={"Enter Book Name"}
+                    placeholder={"Book Name"}
                   />
                 </div>
                 <div className="w-full">
@@ -33,15 +50,54 @@ function addbook() {
                     placeholder={"Enter book Price"}
                   />
                 </div>
-              </div>
+              </form>
             </div>
 
             <div className="lg:flex md:block block justify-center gap-4 pt-6">
               <div className="w-full">
                 <Input
                   disabled={false}
+                  label={"Date"}
+                  placeholder={"Enter Date"}
+                />
+              </div>
+              <div className="w-full">
+                <Input
+                  disabled={false}
+                  label={"Author"}
+                  placeholder={"Enter book Author"}
+                />
+              </div>
+            </div>
+            <div className="lg:flex md:block block justify-center gap-4 pt-6">
+              <div className="w-full">
+                <Input
+                  disabled={false}
+                  label={"Translator"}
+                  placeholder={"Enter book Translator"}
+                />
+              </div>
+              <div className="w-full">
+                <Input
+                  disabled={false}
+                  label={"Authencity"}
+                  placeholder={"Enter book Authencity"}
+                />
+              </div>
+            </div>
+            <div className="lg:flex md:block block justify-center gap-4 pt-6">
+              <div className="w-full">
+                <Input
+                  disabled={false}
                   label={"Description"}
                   placeholder={"Enter book Description"}
+                />
+              </div>
+              <div className="w-full">
+                <Input
+                  disabled={false}
+                  label={"Image"}
+                  placeholder={"Enter Image URL"}
                 />
               </div>
             </div>

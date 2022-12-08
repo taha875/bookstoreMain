@@ -9,7 +9,7 @@ import Addbook from "../components/Add Page/add-age";
 const index = () => {
   return (
     <Layout>
-      <Dashboard />
+      <Addbook />
     </Layout>
   );
 };
