@@ -1,5 +1,5 @@
 import React from "react";
-
+import Router from "next/router";
 const header = () => {
   const [dropdown, setDropdown] = React.useState(false);
   return (
@@ -98,7 +98,10 @@ const header = () => {
                     <li className="px-4 py-2 hover:bg-indigo-700 hover:text-white cursor-pointer">
                       Profile
                     </li>
-                    <li className="px-4 py-2 hover:bg-indigo-700 hover:text-white cursor-pointer">
+                    <li
+                      className="px-4 py-2 hover:bg-indigo-700 hover:text-white cursor-pointer"
+                      onClick={() => Router.push("settings")}
+                    >
                       Setting
                     </li>
                     <li className="px-4 py-2 hover:bg-indigo-700 hover:text-white cursor-pointer">

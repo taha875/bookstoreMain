@@ -10,10 +10,10 @@ function Inner({ page, data }) {
         update={update}
         setUpdate={setUpdate}
         innerPages={true}
-        headingText={data.bookname + " Book"}
+        headingText={data.bookname + ""}
         onClickUpdate={() => setUpdate(!update)}
       />
-      <DisplayCard update={update} data={data} />
+      <DisplayCard update={update} data={data} page={page} />
     </div>
   );
 }
