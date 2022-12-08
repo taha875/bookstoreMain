@@ -8,8 +8,12 @@ function addbook() {
 
   const addDataToArray = (e) => {
     e.preventDefault();
-    setNewArray((prev) => [...prev, addedData]);
-    console.log(addedData, newArray);
+    if (!addedData.id) {
+      console.log("Error");
+    } else {
+      setNewArray((prev) => [...prev, addedData]);
+      console.log(addedData, newArray);
+    }
   };
 
   return (
@@ -38,6 +42,7 @@ function addbook() {
                     disabled={false}
                     label={"ID"}
                     name={"id"}
+                    value={addedData.id}
                     onChange={(e) => {
                       setAddedData({
                         ...addedData,
