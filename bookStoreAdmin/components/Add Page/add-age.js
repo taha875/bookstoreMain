@@ -1,20 +1,28 @@
 import React, { useEffect, useState } from "react";
 import Input from "../Reuseabletable/Input/Input";
 import Router from "next/router";
+import data from "../../Arrays/bookData.json";
 function addbook() {
   const [addedData, setAddedData] = useState([]);
+  const [newArray, setNewArray] = useState([]);
 
-  const addDataToArray = () => {
-    setAddedData([(e.target.name = e.target.value)]);
+  const addDataToArray = (e) => {
+    e.preventDefault();
+    setNewArray((prev) => [...prev, addedData]);
+    console.log(addedData, newArray);
   };
-  console.log(addedData);
+
   return (
-    <>
+    <form
+      onSubmit={(e) => {
+        addDataToArray(e);
+      }}
+    >
       <div className="py-12 px-4">
         <div className="lg:max-w-[1440px] md:max-w-[744px] max-w-[375px] mx-auto">
           <div className="lg:max-w-[1124px] md:max-w-[696px] max-w-[343px] mx-auto bg-white px-6 py-4 rounded shadow">
             <div className="pt-6">
-              <form className="lg:flex md:block block justify-between gap-4">
+              <div className="lg:flex md:block block justify-between gap-4">
                 <div className="w-full">
                   {/* <p className="text-base leading-none text-gray-800">
                     Admin Name{" "}
@@ -31,7 +39,10 @@ function addbook() {
                     label={"ID"}
                     name={"id"}
                     onChange={(e) => {
-                      addDataToArray(e);
+                      setAddedData({
+                        ...addedData,
+                        id: e.target.value,
+                      });
                     }}
                     placeholder={"Enter Book Id"}
                   />
@@ -41,6 +52,13 @@ function addbook() {
                     disabled={false}
                     label={"Book Name"}
                     placeholder={"Book Name"}
+                    on
+                    onChange={(e) => {
+                      setAddedData({
+                        ...addedData,
+                        name: e.target.value,
+                      });
+                    }}
                   />
                 </div>
                 <div className="w-full">
@@ -48,24 +66,29 @@ function addbook() {
                     disabled={false}
                     label={"Price"}
                     placeholder={"Enter book Price"}
+                    onChange={(e) => {
+                      setAddedData({
+                        ...addedData,
+                        price: e.target.value,
+                      });
+                    }}
                   />
                 </div>
-              </form>
+              </div>
             </div>
 
             <div className="lg:flex md:block block justify-center gap-4 pt-6">
               <div className="w-full">
                 <Input
                   disabled={false}
-                  label={"Date"}
-                  placeholder={"Enter Date"}
-                />
-              </div>
-              <div className="w-full">
-                <Input
-                  disabled={false}
                   label={"Author"}
                   placeholder={"Enter book Author"}
+                  onChange={(e) => {
+                    setAddedData({
+                      ...addedData,
+                      author: e.target.value,
+                    });
+                  }}
                 />
               </div>
             </div>
@@ -75,6 +98,12 @@ function addbook() {
                   disabled={false}
                   label={"Translator"}
                   placeholder={"Enter book Translator"}
+                  onChange={(e) => {
+                    setAddedData({
+                      ...addedData,
+                      translator: e.target.value,
+                    });
+                  }}
                 />
               </div>
               <div className="w-full">
@@ -82,6 +111,12 @@ function addbook() {
                   disabled={false}
                   label={"Authencity"}
                   placeholder={"Enter book Authencity"}
+                  onChange={(e) => {
+                    setAddedData({
+                      ...addedData,
+                      authenticatedBy: e.target.value,
+                    });
+                  }}
                 />
               </div>
             </div>
@@ -91,27 +126,27 @@ function addbook() {
                   disabled={false}
                   label={"Description"}
                   placeholder={"Enter book Description"}
+                  onChange={(e) => {
+                    setAddedData({
+                      ...addedData,
+                      description: e.target.value,
+                    });
+                  }}
                 />
               </div>
-              <div className="w-full">
-                <Input
-                  disabled={false}
-                  label={"Image"}
-                  placeholder={"Enter Image URL"}
-                />
-              </div>
+              <div className="w-full"></div>
             </div>
           </div>
         </div>
       </div>
       <div className="flex gap-5 pt-4 m-auto justify-center ">
-        <button
-          className="text-indigo-700 border border-indigo-700 px-3 rounded font-medium hover:bg-indigo-50"
-          onClick={() => Router.push("/")}
-        >
+        <button className="text-indigo-700 border border-indigo-700 px-3 rounded font-medium hover:bg-indigo-50">
           Cancel Changes
         </button>
-        <button className="text-white border border-indigo-700 bg-indigo-700 px-6 py-3 rounded font-medium hover:bg-indigo-600">
+        <button
+          type="submit"
+          className="text-white border border-indigo-700 bg-indigo-700 px-6 py-3 rounded font-medium hover:bg-indigo-600"
+        >
           Save Changes
           <svg
             className="mt-1 float-right flex justify-center items-center"
@@ -130,7 +165,7 @@ function addbook() {
           </svg>
         </button>
       </div>
-    </>
+    </form>
   );
 }
 
