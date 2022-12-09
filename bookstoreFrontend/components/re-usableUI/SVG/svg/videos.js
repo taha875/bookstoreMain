@@ -6,11 +6,11 @@ function videos() {
       <svg
         xmlns="http://www.w3.org/2000/svg"
         className="icon icon-tabler icon-tabler-brand-youtube"
-        width={16}
-        height={16}
+        width={80}
+        height={80}
         viewBox="0 0 24 24"
         strokeWidth="1.5"
-        stroke="white"
+        stroke="currentColor"
         fill="none"
         strokeLinecap="round"
         strokeLinejoin="round"

@@ -5,6 +5,7 @@ import Links from "./svg/links";
 import Video from "./svg/videos";
 import Nasheeds from "./svg/nasheeds";
 import Posters from "./svg/posters";
+import NewBook from "./svg/newBook";
 function icons({ iconElement }) {
   switch (iconElement) {
     case "video":
@@ -25,14 +26,16 @@ function icons({ iconElement }) {
     case "icons":
       iconElement = <Links />;
       break;
-      case"posters":
-      iconElement=<Posters />;
+    case "posters":
+      iconElement = <Posters />;
       break;
-      case "links":
-        iconElement=<Links />;
-        break;
-        default:
-
+    case "links":
+      iconElement = <Links />;
+      break;
+    case "newBook":
+      iconElement = <NewBook />;
+      break;
+    default:
   }
 
   return (

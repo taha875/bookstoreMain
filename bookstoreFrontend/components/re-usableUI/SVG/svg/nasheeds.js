@@ -5,8 +5,8 @@ function nasheeds() {
     <>
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        width={16}
-        height={16}
+        width={80}
+        height={80}
         fill="currentColor"
         className="bi bi-book"
         strokeWidth="1.5"
