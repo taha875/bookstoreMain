@@ -3,8 +3,7 @@ import React from "react";
 function PageHeader({
   headingText,
   innerPages,
-  onClickUpdate,
-  update,
+ 
   onClickDelete,
 }) {
   return (
@@ -27,16 +26,7 @@ function PageHeader({
                 </div>
               </>
             )}
-            <button
-              onClick={onClickUpdate}
-              className="inline-flex ml-1.5 items-start justify-start px-6 py-3 bg-indigo-700 hover:bg-indigo-600 focus:outline-none rounded"
-            >
-              <p className="text-sm font-medium leading-none text-white">
-                {innerPages
-                  ? `${update ? `Save` : `Update`}`
-                  : `Add ${headingText}`}
-              </p>
-            </button>
+            
             {innerPages && (
               <button
                 onClick={onClickDelete}
