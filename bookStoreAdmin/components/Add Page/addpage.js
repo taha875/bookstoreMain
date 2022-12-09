@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
 import Input from "../Reuseabletable/Input/Input";
 import Router from "next/router";
-import data from "../../Arrays/bookData.json";
+import Data from "../../Arrays/bookData.json";
+
 function addbook() {
   const [addedData, setAddedData] = useState([]);
   const [newArray, setNewArray] = useState([]);
@@ -9,6 +10,22 @@ function addbook() {
   const addDataToArray = (e) => {
     e.preventDefault();
     if (!addedData.id) {
+      console.log("Error");
+    } else if (!addedData.bookimage) {
+      console.log("Error");
+    } else if (!addedData.id) {
+      console.log("Error");
+    } else if (!addedData.bookname) {
+      console.log("Error");
+    } else if (!addedData.price) {
+      console.log("Error");
+    } else if (!addedData.author) {
+      console.log("Error");
+    } else if (!addedData.translator) {
+      console.log("Error");
+    } else if (!addedData.authenticatedBy) {
+      console.log("Error");
+    } else if (!addedData.description) {
       console.log("Error");
     } else {
       setNewArray((prev) => [...prev, addedData]);
@@ -23,21 +40,38 @@ function addbook() {
       }}
     >
       <div className="py-12 px-4">
+        <div className="flex items-center m-auto justify-center">
+          <p className="text-base sm:text-lg md:text-xl lg:text-2xl font-bold leading-normal text-gray-800 ">
+            Add Book
+          </p>
+          <svg
+            className="ml-3"
+            xmlns="http://www.w3.org/2000/svg"
+            class="icon icon-tabler icon-tabler-book"
+            width="26"
+            height="26"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="#000000"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M3 19a9 9 0 0 1 9 0a9 9 0 0 1 9 0" />
+            <path d="M3 6a9 9 0 0 1 9 0a9 9 0 0 1 9 0" />
+            <line x1="3" y1="6" x2="3" y2="19" />
+            <line x1="12" y1="6" x2="12" y2="19" />
+            <line x1="21" y1="6" x2="21" y2="19" />
+          </svg>
+        </div>
+
+        <hr className="mt-4"></hr>
         <div className="lg:max-w-[1440px] md:max-w-[744px] max-w-[375px] mx-auto">
           <div className="lg:max-w-[1124px] md:max-w-[696px] max-w-[343px] mx-auto bg-white px-6 py-4 rounded shadow">
             <div className="pt-6">
               <div className="lg:flex md:block block justify-between gap-4">
                 <div className="w-full">
-                  {/* <p className="text-base leading-none text-gray-800">
-                    Admin Name{" "}
-                  </p>
-                  <input
-                    type="text"
-                    name
-                    id
-                    placeholder="Admin"
-                    className="focus:outline-none border border-gray-300 py-3 pl-3 rounded w-full mt-4"
-                  /> */}
                   <Input
                     disabled={false}
                     label={"ID"}
@@ -56,12 +90,14 @@ function addbook() {
                   <Input
                     disabled={false}
                     label={"Book Name"}
+                    name={"bookname"}
+                    value={addedData.bookname}
                     placeholder={"Book Name"}
                     on
                     onChange={(e) => {
                       setAddedData({
                         ...addedData,
-                        name: e.target.value,
+                        bookname: e.target.value,
                       });
                     }}
                   />
@@ -70,6 +106,8 @@ function addbook() {
                   <Input
                     disabled={false}
                     label={"Price"}
+                    name={"price"}
+                    value={addedData.price}
                     placeholder={"Enter book Price"}
                     onChange={(e) => {
                       setAddedData({
@@ -87,6 +125,8 @@ function addbook() {
                 <Input
                   disabled={false}
                   label={"Author"}
+                  name={"author"}
+                  value={addedData.author}
                   placeholder={"Enter book Author"}
                   onChange={(e) => {
                     setAddedData({
@@ -102,6 +142,8 @@ function addbook() {
                 <Input
                   disabled={false}
                   label={"Translator"}
+                  name={"translator"}
+                  value={addedData.translator}
                   placeholder={"Enter book Translator"}
                   onChange={(e) => {
                     setAddedData({
@@ -115,6 +157,8 @@ function addbook() {
                 <Input
                   disabled={false}
                   label={"Authencity"}
+                  name={"authencity"}
+                  value={addedData.authencity}
                   placeholder={"Enter book Authencity"}
                   onChange={(e) => {
                     setAddedData({
@@ -130,6 +174,8 @@ function addbook() {
                 <Input
                   disabled={false}
                   label={"Description"}
+                  name={"description"}
+                  value={addedData.description}
                   placeholder={"Enter book Description"}
                   onChange={(e) => {
                     setAddedData({
@@ -144,8 +190,59 @@ function addbook() {
           </div>
         </div>
       </div>
+      <div className="flex flex-col items-center m-auto  justify-center w-3/6 mb-8 border border-dashed border-indigo-700 rounded-lg py-8">
+        <div className="cursor-pointer mb-5 text-indigo-700 dark:text-indigo-600">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="icon icon-tabler icon-tabler-cloud-upload"
+            width={60}
+            height={60}
+            viewBox="0 0 24 24"
+            strokeWidth={1}
+            stroke="currentColor"
+            fill="none"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" />
+            <path d="M7 18a4.6 4.4 0 0 1 0 -9h0a5 4.5 0 0 1 11 2h1a3.5 3.5 0 0 1 0 7h-1" />
+            <polyline points="9 15 12 12 15 15" />
+            <line x1={12} y1={12} x2={12} y2={21} />
+          </svg>
+        </div>
+        <p className="text-base font-normal tracking-normal text-gray-800 dark:text-gray-100 text-center">
+          Drag and drop here
+        </p>
+        <p className="text-base font-normal tracking-normal text-gray-800 dark:text-gray-100 text-center my-1">
+          or
+        </p>
+        <label
+          htmlFor="fileUp"
+          className="cursor-pointer text-base font-normal tracking-normal text-indigo-700 dark:text-indigo-600 text-center"
+        >
+          {" "}
+          Browse
+        </label>
+        <input
+          value={addedData.bookimage}
+          placeholder={"Enter book image"}
+          onChange={(e) => {
+            setAddedData({
+              ...addedData,
+              bookimage: e.target.value,
+            });
+          }}
+          type="file"
+          className="hidden"
+          name="fileUpload"
+          id="fileUp"
+        />
+      </div>
       <div className="flex gap-5 pt-4 m-auto justify-center ">
-        <button className="text-indigo-700 border border-indigo-700 px-3 rounded font-medium hover:bg-indigo-50">
+        <button
+          className="text-indigo-700 border border-indigo-700 px-3 rounded font-medium hover:bg-indigo-50"
+          onClick={() => Router.push("/books")}
+        >
           Cancel Changes
         </button>
         <button

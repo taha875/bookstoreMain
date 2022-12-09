@@ -1,5 +1,7 @@
-import React from "react";
+import { useState } from "react";
+import Data from "../../../Arrays/bookData.json";
 import Router from "next/router";
+
 function PageHeader({
   headingText,
   innerPages,
@@ -7,6 +9,8 @@ function PageHeader({
   update,
   onClickDelete,
 }) {
+  const [DeletedArray, setDeletedArray] = useState([Data]);
+  console.log(DeletedArray);
   return (
     <>
       <div className="lg:flex items-center justify-between ">
@@ -28,7 +32,7 @@ function PageHeader({
               </>
             )}
             <button
-              onClick={onClickUpdate}
+              onClick={() => Router.push("/add" + headingText)}
               className="inline-flex ml-1.5 items-start justify-start px-6 py-3 bg-indigo-700 hover:bg-indigo-600 focus:outline-none rounded"
             >
               <p className="text-sm font-medium leading-none text-white">
@@ -39,7 +43,11 @@ function PageHeader({
             </button>
             {innerPages && (
               <button
-                onClick={onClickDelete}
+                onClick={() => {
+                  setDeletedArray(
+                    DeletedArray.filter((a) => a.headingText !== a.headingText)
+                  );
+                }}
                 className="inline-flex ml-1.5 items-start justify-start px-6 py-3 bg-indigo-700 hover:bg-indigo-600 focus:outline-none rounded"
               >
                 <p className="text-sm font-medium leading-none text-white">
