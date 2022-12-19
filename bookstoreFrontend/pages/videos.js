@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 import Videocard from "../components/cards/videocard";
-import Home from "../components/LandingPage/home/home";
+import Header from "../components/landingPageV2/Header/Header";
 import Footer from "../components/layout/footer";
 export default function Index() {
   const [show, setshow] = useState();
 
   return (
     <>
-      <Home/>
+      <Header />
       <div className="mx-auto container py-12 px-4">
         <div className="flex flex-col w-full xl:flex-row justify-center">
           {/* Menu Start */}
@@ -231,7 +231,7 @@ export default function Index() {
           {/* Cards End */}
         </div>
       </div>
-      <Footer/>
+      <Footer />
     </>
   );
 }

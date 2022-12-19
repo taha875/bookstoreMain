@@ -1,10 +1,13 @@
 import React from "react";
-import Navbar from "./navbar";
+
+import Header from "../landingPageV2/Header/Header"
+import Footer from "./footers";
 export default function layout({ Childern }) {
   return (
     <div className="relative z-30 flex flex-col">
-      <Navbar />
+      <Header />
       {Childern}
+      <Footer />
     </div>
   );
 }

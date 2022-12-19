@@ -1,5 +1,5 @@
 import Bookcard from "../components/cards/bookcard";
-import Home from "../components/LandingPage/home/home";
+import Header from "../components/landingPageV2/Header/Header";
 import Footer from "../components/layout/footer";
 import React, { useState } from "react";
 export default function Index() {
@@ -7,7 +7,7 @@ export default function Index() {
 
   return (
     <>
-      <Home />
+      <Header/>
       <div className="mx-auto container py-12 px-4">
         <div className="flex flex-col w-full xl:flex-row justify-center">
           {/* Menu Start */}

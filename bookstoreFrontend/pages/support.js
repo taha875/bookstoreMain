@@ -1,12 +1,13 @@
 import React from "react";
-import Home from "../components/LandingPage/home/home";
-import Footer from "../components/layout/footer";
-import Support from "../components/Support/index";
 
+import Support from "../components/Support/index";
+import Header from "../components/landingPageV2/Header/Header";
+
+import Footer from "../components/layout/footer";
 const support = () => {
   return (
     <>
-      <Home />
+      <Header />
       <Support />
       <Footer />
     </>

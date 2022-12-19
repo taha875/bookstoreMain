@@ -1,5 +1,5 @@
 import React from "react";
-
+import Data from "../../DataArrays/donationData.json";
 function Donation() {
   return (
     <>
@@ -19,9 +19,20 @@ function Donation() {
             A Donation would be appreciated
           </p>
           <div className="mx-auto container mt-12 flex items-center justify-between">
-            <div className="bg-white h-96 w-96 rounded-md relative z-30 cursor-pointer"></div>
-            <div className="bg-white h-96 w-96 rounded-md relative z-30"></div>
-            <div className="bg-white h-96 w-96 rounded-md relative z-30"></div>
+            {Data.map((Data) => (
+              <div className="bg-white h-96 w-96 rounded-md relative z-30 cursor-pointer p-4">
+                <img className="" src={Data.img} />
+                <h2 className="mt-2 text-2xl  font-semibold text-black ">
+                  {Data.text}
+                </h2>
+                <p className="text-base font-semibold truncate text-gray-700 ">
+                  {Data.body}
+                </p>
+                <button className="text-base font-semibold truncate mt-10 text-gray-600">
+                  read more
+                </button>
+              </div>
+            ))}
           </div>
         </div>
       </div>

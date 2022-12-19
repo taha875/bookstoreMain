@@ -1,11 +1,11 @@
 import React from "react";
-import Home from "../components/LandingPage/home/home";
-import Footer from "../components/layout/footer";
+import Header from "../components/landingPageV2/Header/Header";
 import Aboutus from "../components/Aboutus/index";
+import Footer from "../components/layout/footer";
 const aboutus = () => {
   return (
     <div>
-      <Home />
+      <Header />
       <Aboutus />
       <Footer />
     </div>

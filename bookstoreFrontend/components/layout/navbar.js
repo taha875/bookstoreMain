@@ -55,27 +55,39 @@ function navbar() {
                 .
                 <ul className="text-sm font-normal">
                   <li className="px-4 py-2 hover:bg-yellow-700 hover:text-white cursor-pointer">
-                    Books
+                    <button onClick={() => Router.push("/books")}>Books</button>
+                  </li>
+
+                  <li className="px-4 py-2 hover:bg-yellow-700 hover:text-white cursor-pointer">
+                    <button onClick={() => Router.push("/audios")}>
+                      Audio
+                    </button>
+                  </li>
+
+                  <li className="px-4 py-2 hover:bg-yellow-700 hover:text-white cursor-pointer">
+                    <button onClick={() => Router.push("/videos")}>
+                      Video
+                    </button>
                   </li>
                   <li className="px-4 py-2 hover:bg-yellow-700 hover:text-white cursor-pointer">
-                    Audio
+                    <button onClick={() => Router.push("/nasheeds")}>
+                      Nasheed
+                    </button>
                   </li>
                   <li className="px-4 py-2 hover:bg-yellow-700 hover:text-white cursor-pointer">
-                    Video
+                    <button onClick={() => Router.push("/posters")}>
+                      Posters
+                    </button>
                   </li>
                   <li className="px-4 py-2 hover:bg-yellow-700 hover:text-white cursor-pointer">
-                    Nasheed
-                  </li>
-                  <li className="px-4 py-2 hover:bg-yellow-700 hover:text-white cursor-pointer">
-                    Islamic Posters
-                  </li>
-                  <li className="px-4 py-2 hover:bg-yellow-700 hover:text-white cursor-pointer">
-                    Islamic Links
+                    <button onClick={() => Router.push("/link")}>
+                      Islamic Links
+                    </button>
                   </li>
                 </ul>
               </div>
             </li>
-         
+
             <li
               className="flex cursor-pointer mx-4 text-gray-300 text-sm leading-3 tracking-normal  hover:text-yellow-800 focus:text-indigo-700 focus:outline-none"
               onclick="dropdownHandler(this)"

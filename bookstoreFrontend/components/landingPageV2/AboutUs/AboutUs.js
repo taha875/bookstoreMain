@@ -1,5 +1,6 @@
 import React from "react";
 import Heading from "../../re-usableUI/Heading/Heading";
+import Router from "next/router";
 
 function AboutUs() {
   return (
@@ -29,7 +30,8 @@ function AboutUs() {
                 role="button"
                 aria-label="explore more"
                 className="sm:w-auto w-full mt-6 text-base font-medium leading-none text-white bg-yellow-700 rounded md:p-4 p-6 focus:ring-2 focus:ring-offset-2 focus:ring-yellow-700 hover:bg-yellow-600 focus:outline-none"
-              >
+             onClick={() => Router.push("./aboutus")}
+             >
                 Explore More
               </button>
             </div>
